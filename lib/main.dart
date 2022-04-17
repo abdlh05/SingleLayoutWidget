@@ -66,8 +66,34 @@ class MyHomePage extends StatelessWidget {
       //   ),
       // ),
 
-      //
-      body: Row(
+      // Row untuk orientation Horizontal
+      // body: Row(
+      //   children: <Widget>[
+      //     Expanded(
+      //         child: Icon(
+      //       Icons.home,
+      //       size: 70,
+      //     )),
+      //     Expanded(
+      //         child: Icon(
+      //       Icons.home,
+      //       size: 70,
+      //     )),
+      //     Expanded(
+      //         child: Icon(
+      //       Icons.home,
+      //       size: 70,
+      //     )),
+      //     Expanded(
+      //         child: Icon(
+      //       Icons.home,
+      //       size: 70,
+      //     )),
+      //   ],
+      // ),
+
+      //column untuk orientation Vertical
+      body: Column(
         children: <Widget>[
           Expanded(
               child: Icon(
