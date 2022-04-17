@@ -32,9 +32,17 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Container(
-        alignment: Alignment.centerLeft,
-        padding: EdgeInsets.all(18.0),
-        child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.blue)),
+        margin: EdgeInsets.all(30.0),
+        width: double.infinity,
+        height: 200,
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          border: Border.all(),
+        ),
+        child: Align(
+          alignment: Alignment.topRight,
+          child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.blue)),
+        ),
       ),
     );
   }
