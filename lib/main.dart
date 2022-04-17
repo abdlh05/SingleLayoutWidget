@@ -33,6 +33,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Container(
         margin: EdgeInsets.all(30.0),
+        padding: EdgeInsets.only(right: 8.0, top: 8.0),
         width: double.infinity,
         height: 200,
         decoration: BoxDecoration(
