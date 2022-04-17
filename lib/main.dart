@@ -31,6 +31,7 @@ class MyHomePage extends StatelessWidget {
         // The title text which will be shown on the action bar
         title: Text(title),
       ),
+      // DECORATION BOX
       // body: Container(
       //   margin: EdgeInsets.all(30.0),
       //   padding: EdgeInsets.only(right: 8.0, top: 8.0),
@@ -45,22 +46,47 @@ class MyHomePage extends StatelessWidget {
       //     child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.white)),
       //   ),
       // ),
-      body: Center(
-        child: IntrinsicWidth(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              RaisedButton(
-                onPressed: () {},
-                child: Text('Tombol Pendek'),
-              ),
-              RaisedButton(
-                onPressed: () {},
-                child: Text('Tombol Lebih Panjang'),
-              ),
-            ],
+
+      //BUTTON
+      // body: Center(
+      //   child: IntrinsicWidth(//Lebar mengikuti child
+      //     child: Column(
+      //       crossAxisAlignment: CrossAxisAlignment.stretch,
+      //       children: <Widget>[
+      //         RaisedButton(
+      //           onPressed: () {},
+      //           child: Text('Tombol Pendek'),
+      //         ),
+      //         RaisedButton(
+      //           onPressed: () {},
+      //           child: Text('Tombol Lebih Panjang'),
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
+
+      //
+      body: Row(
+        children: <Widget>[
+          Expanded(
+              child: Icon(
+            Icons.home,
+            size: 70,
+          )),
+          Icon(
+            Icons.home,
+            size: 70,
           ),
-        ),
+          Icon(
+            Icons.home,
+            size: 70,
+          ),
+          Icon(
+            Icons.home,
+            size: 70,
+          ),
+        ],
       ),
     );
   }
