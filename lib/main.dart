@@ -31,8 +31,8 @@ class MyHomePage extends StatelessWidget {
         // The title text which will be shown on the action bar
         title: Text(title),
       ),
-      body: Align(
-        alignment: Alignment.topCenter,
+      body: Padding(
+        padding: EdgeInsets.all(18.0),
         child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.blue)),
       ),
     );
