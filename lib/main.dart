@@ -32,8 +32,8 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Align(
-        alignment: Alignment.center,
-        child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.blue)),
+        alignment: Alignment.topCenter,
+        child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.tealAccent)),
       ),
     );
   }
