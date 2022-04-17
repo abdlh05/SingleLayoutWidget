@@ -138,7 +138,7 @@ class MyHomePage extends StatelessWidget {
             child: ListTile(
               leading: Image.network("https://s3.theasianparent.com/cdn-cgi/image/width=450,quality=90/tap-assets-prod/wp-content/uploads/sites/24/2020/11/Tanpa-judul-69.jpg"),
               title: Text(
-                "Gambar 1",
+                "Soekarno",
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
