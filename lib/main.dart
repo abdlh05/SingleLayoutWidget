@@ -119,15 +119,37 @@ class MyHomePage extends StatelessWidget {
       //   ],
       // ),
 
-//                             <--GRIDVIEW-->
-      body: GridView.count(
-        crossAxisCount: 2, //menentukan berapa row
-        children: <Widget>[
-          Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
-          Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
-          Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
-          Container(color: Colors.blueAccent, height: 500.0, child: Center(child: Text('4', style: TextStyle(fontSize: 30.0)))),
-        ],
+//                             <--GRID VIEW-->
+      // body: GridView.count(
+      //   crossAxisCount: 2, //menentukan berapa row
+      //   children: <Widget>[
+      //     Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
+      //     Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
+      //     Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
+      //     Container(color: Colors.blueAccent, height: 500.0, child: Center(child: Text('4', style: TextStyle(fontSize: 30.0)))),
+      //   ],
+      // ),
+
+//                               <--LIST VIEW-->
+      body: ListView.builder(
+        itemBuilder: (contex, index) {
+          return Card(
+            child: ListTile(
+              leading: Image.network("https://s3.theasianparent.com/cdn-cgi/image/width=450,quality=90/tap-assets-prod/wp-content/uploads/sites/24/2020/11/Tanpa-judul-69.jpg"),
+              title: Text(
+                "Gambar 1",
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              subtitle: Text(
+                "Soekarno is indonesian hero and 1st president",
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          );
+        },
+        itemCount: 20,
       ),
     );
   }
