@@ -45,18 +45,22 @@ class MyHomePage extends StatelessWidget {
       //     child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.white)),
       //   ),
       // ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          RaisedButton(
-            onPressed: () {},
-            child: Text('Tombol Pendek'),
+      body: Center(
+        child: IntrinsicWidth(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              RaisedButton(
+                onPressed: () {},
+                child: Text('Tombol Pendek'),
+              ),
+              RaisedButton(
+                onPressed: () {},
+                child: Text('Tombol Lebih Panjang'),
+              ),
+            ],
           ),
-          RaisedButton(
-            onPressed: () {},
-            child: Text('Tombol Lebih Panjang'),
-          ),
-        ],
+        ),
       ),
     );
   }
