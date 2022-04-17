@@ -74,18 +74,21 @@ class MyHomePage extends StatelessWidget {
             Icons.home,
             size: 70,
           )),
-          Icon(
+          Expanded(
+              child: Icon(
             Icons.home,
             size: 70,
-          ),
-          Icon(
+          )),
+          Expanded(
+              child: Icon(
             Icons.home,
             size: 70,
-          ),
-          Icon(
+          )),
+          Expanded(
+              child: Icon(
             Icons.home,
             size: 70,
-          ),
+          )),
         ],
       ),
     );
