@@ -31,19 +31,32 @@ class MyHomePage extends StatelessWidget {
         // The title text which will be shown on the action bar
         title: Text(title),
       ),
-      body: Container(
-        margin: EdgeInsets.all(30.0),
-        padding: EdgeInsets.only(right: 8.0, top: 8.0),
-        width: double.infinity,
-        height: 200,
-        decoration: BoxDecoration(
-          color: Colors.blue,
-          border: Border.all(),
-        ),
-        child: Align(
-          alignment: Alignment.topRight,
-          child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.white)),
-        ),
+      // body: Container(
+      //   margin: EdgeInsets.all(30.0),
+      //   padding: EdgeInsets.only(right: 8.0, top: 8.0),
+      //   width: double.infinity,
+      //   height: 200,
+      //   decoration: BoxDecoration(
+      //     color: Colors.blue,
+      //     border: Border.all(),
+      //   ),
+      //   child: Align(
+      //     alignment: Alignment.topRight,
+      //     child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.white)),
+      //   ),
+      // ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          RaisedButton(
+            onPressed: () {},
+            child: Text('Tombol Pendek'),
+          ),
+          RaisedButton(
+            onPressed: () {},
+            child: Text('Tombol Lebih Panjang'),
+          ),
+        ],
       ),
     );
   }
