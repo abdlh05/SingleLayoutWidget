@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Align(
         alignment: Alignment.topCenter,
-        child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.tealAccent)),
+        child: Text('Hello, Flutter!', style: TextStyle(fontSize: 30, color: Colors.blue)),
       ),
     );
   }
