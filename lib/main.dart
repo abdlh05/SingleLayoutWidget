@@ -119,9 +119,18 @@ class MyHomePage extends StatelessWidget {
       //   ],
       // ),
 
+//                             <--GRIDVIEW-->
       body: GridView.count(
-        crossAxisCount: 2,
+        crossAxisCount: 2, //menentukan berapa row
         children: <Widget>[
+          Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.blueAccent, height: 500.0, child: Center(child: Text('4', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
+          Container(color: Colors.blueAccent, height: 500.0, child: Center(child: Text('4', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
