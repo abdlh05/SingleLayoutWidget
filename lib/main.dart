@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -124,7 +123,7 @@ class MyHomePage extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: 2, //menentukan berapa row
         children: <Widget>[
-          Container(color: Colors.redAccent, height: 500.0, child: Center(child: Image.network('https://s3.theasianparent.com/cdn-cgi/image/width=450,quality=90/tap-assets-prod/wp-content/uploads/sites/24/2020/11/Tanpa-judul-69.jpg'))),
+          Container(color: Colors.redAccent, height: 500.0, child: Center(child: Text('1', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.yellowAccent, height: 500.0, child: Center(child: Text('2', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.greenAccent, height: 500.0, child: Center(child: Text('3', style: TextStyle(fontSize: 30.0)))),
           Container(color: Colors.blueAccent, height: 500.0, child: Center(child: Text('4', style: TextStyle(fontSize: 30.0)))),
