@@ -133,7 +133,8 @@ class MyHomePage extends StatelessWidget {
 //                               <--LIST VIEW-->
       body: ListView.builder(
         itemBuilder: (contex, index) {
-          return Card(
+          return Padding(
+            padding: EdgeInsets.all(8.0),
             child: ListTile(
               leading: Image.network("https://s3.theasianparent.com/cdn-cgi/image/width=450,quality=90/tap-assets-prod/wp-content/uploads/sites/24/2020/11/Tanpa-judul-69.jpg"),
               title: Text(
