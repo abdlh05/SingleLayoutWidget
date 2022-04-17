@@ -149,7 +149,7 @@ class MyHomePage extends StatelessWidget {
             ),
           );
         },
-        itemCount: 20,
+        itemCount: 4,
       ),
     );
   }
