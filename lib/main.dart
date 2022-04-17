@@ -134,7 +134,8 @@ class MyHomePage extends StatelessWidget {
       body: ListView.builder(
         itemCount: 20,
         itemBuilder: (contex, index) {
-          return Padding(
+          return Card(
+              child: Padding(
             padding: EdgeInsets.only(top: 20.0),
             child: ListTile(
               leading: Image.network("https://s3.theasianparent.com/cdn-cgi/image/width=450,quality=90/tap-assets-prod/wp-content/uploads/sites/24/2020/11/Tanpa-judul-69.jpg"),
@@ -149,7 +150,7 @@ class MyHomePage extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-          );
+          ));
         },
       ),
     );
